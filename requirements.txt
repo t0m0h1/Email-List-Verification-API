@@ -2,3 +2,4 @@ Flask
 dnspython
 email-validator
 Flask-Limiter
+gunicorn==20.1.0
