@@ -9,7 +9,8 @@ from flask_limiter.util import get_remote_address
 
 # --- Flask Setup ---
 app = Flask(__name__)
-limiter = Limiter(app, key_func=get_remote_address)
+limiter = Limiter(app=app, key_func=get_remote_address)
+
 
 # --- Config ---
 VALID_API_KEYS = {"demo-key-123"}
